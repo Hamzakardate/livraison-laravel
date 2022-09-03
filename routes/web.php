@@ -77,3 +77,6 @@ Route::post('/salereturns/returns/{id}', 'ExitreturnController@deliveryreturns')
 
 Route::get('/user', 'UseractiveController@index')->middleware('can:Admine,App\User')->middleware('can:Active,App\Sale');
 Route::post('/user/activedesactive/{id}', 'UseractiveController@activedesactive')->middleware('can:Admine,App\User')->middleware('can:Active,App\Sale');
+
+
+//
